@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;   
+ font-family: "Poppins",sans-serif;
+ text-transform: capitalize;
+ box-sizing: border-box;
+ transition: all .3s ease;
+
+ text-decoration: none;
+}
+
+:root{
+    --dark-green:#112a34;
+    --green-color:#004047;
+    --white-color:#fff;
+}
+
+::selection{
+    background: var(--green-color);
+    color: var(--white-color);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    font-size: 90%;
+}
+
+section{
+    padding: 0 8rem;
+    width: 100%;
+}
+
+section.home{
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+}
+.home .homeBox{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url("https://images.unsplash.com/photo-1647311022453-ab4353c000db?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: .5rem;
+    border-radius:.5rem;
+}
+
+.home .homeBox nav{
+    width: 100%;
+    height: 65px;
+    background: linear-gradient(rgba(255,255,255,.2),rgba(255,255,255,.2));
+    backdrop-filter: blur(1px);
+    border-radius: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    z-index:10 ;
+    position: relative;
+}
+
+.home .homeBox nav .logo{
+    display: flex;
+  align-items: center;
+    gap: 1rem;
+}
+
+.home .homeBox nav .logo .bar{
+font-size: 1.35rem;
+color: var(--white-color);
+cursor: pointer;
+display: none;
+} 
+
+.home .homeBox nav .logo .bar:hover{
+    color: var(--green-color);
+}
+
+.home .homeBox nav .logo h3{
+color: var(--white-color);
+font-weight: 500;
+
+}
+
+.home .homeBox nav .menu .close{
+    display: none;
+
+} 
+
+.home .homeBox nav .menu ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+
+}
+.home .homeBox nav .menu ul li a{
+    color: var(--white-color);
+    font-weight: 400;
+
+}
+.home .homeBox nav .menu ul li a:hover{
+    color: rgb(255, 255, 255/70%);
+}
+.home .homeBox nav .signup-login{
+ display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.home .homeBox nav .signup-login a{
+    color: var(--white-color);
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+}
+.home .homeBox nav .signup-login a:last-child{
+background: var(--green-color);
+padding:.3rem 1rem ;
+border-radius: 2rem;
+}
+.home .homeBox nav .signup-login a:hover{
+    color: rgb(255, 255, 255/75%);
+}
+
+.home .homeBox nav .signup-login a:last-child:hover{
+    color:var(--white-color) ;
+    background:#02636e ;
+}
+
+.home .homeBox .content{
+    width: 100%;
+    height: calc(100% - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0 ,-65px);
+}
+.home .homeBox .content h5{
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.home .homeBox .content h1{
+    font-size:4rem ;
+    max-width: 50rem;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom:1rem;
+}
+.home .homeBox .content p{
+    color: var(--white-color);
+font-weight: 300;
+max-width: 40rem;
+font-size: 1.3rem;
+margin-bottom: 2rem;
+text-align: center;
+}
+.home .homeBox .content .search{
+    width: 100%;
+    max-width: 38rem;
+height: 45px;
+background: var(--white-color);
+border-radius: 3rem;
+display: flex;
+align-items: center;
+padding: .3rem;
+}
+.home .homeBox .content .search i{
+    color: rgba(0, 0,0 ,.5 );
+    margin: 0.6rem;
+}
+
+
+.home .homeBox .content .search input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 400;
+}
+.home .homeBox .content .search button{
+    height: 100%;
+    padding: 0 1rem;
+    border-radius: inherit;
+    background: var(--green-color);
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    font-weight: 400;
+    cursor: pointer;
+}
+.home .homeBox .content .search button:hover{
+ background: #02636e;   
+}
+
+
+/* travel section start */
+.travel .container{
+   width: 100%; 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 4rem;
+   padding: 5rem 0;
+
+}
+.travel .container .box{
+    padding: 0 1rem;
+    text-align: center;
+    max-width: 30rem;
+}
+.travel .container .box img{
+    height: 10rem;
+}
+
+.travel .container .box h4{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    font-weight: 600;
+
+}
+.travel .container .box p{
+    color: #666;
+}
+/* travel section end */
+
+
+
+
+
+
+
+
+/* media queries of section start */
+@media only screen  and (max-width:1020px)  {
+html{
+   font-size: 85%; 
+}   
+ section{
+    padding: 0 2rem;
+ }
+}
+@media only screen  and (max-width:910px)  {
+  .home .homeBox nav{
+    padding: 0 1rem;
+  }
+   
+  .home .homeBox nav .menu{
+    gap: 2rem;
+  }
+    }
+
+    @media only screen  and (max-width:767px)  {
+     .home .homeBox nav .menu{
+        display: none;
+     }
+     
+     .home .homeBox nav .logo .bar{
+        display: block;
+     }
+     .home .homeBox nav .menu.active{
+        display: block;
+        position:absolute ;
+        left: -1.5rem;
+        top: -1.5rem;
+        width: 100vw;
+        height: 100vh;
+        background: rgb(0 0 0/90%);
+        display: flex;
+        align-items: center;
+        padding: 0 3rem;
+     }
+     .home .homeBox nav .menu .close{
+        display: block;
+        position: absolute;
+        left: 3rem;
+        top: 3rem;
+        cursor: pointer;
+        color: var(--white-color);
+        font-size: 2rem;
+     }
+     .home .homeBox nav .menu .close:hover{
+        color: rgb(255 255 255/40%);
+     }
+     .home .homeBox nav .menu ul{
+        flex-direction: column;
+        font-size: 1.3rem;
+        gap: 1.3rem;
+     }
+     .home .homeBox nav .menu ul:hover li a{
+        color: rgb(255 255 255/40%);
+     }
+
+     .home .homeBox nav .menu ul li a:hover{
+        color: var(--white-color);
+     }
+     .home .homeBox .content{
+        padding: 2rem;
+     }
+     .travel .container{
+        flex-direction: column;
+        padding: 4rem 0;
+        gap: 4rem;
+
+     }
+
+     .travel .container .box img{
+        height: 6rem;
+     }
+
+}
+
+        @media only screen  and (max-width:607px)  {
+            .home .homeBox .content h1{
+               font-size: 2rem; 
+            }
+            .home .homeBox .content p{
+                font-size: .8rem; 
+             }
+            }
+/* media queries of section end */
